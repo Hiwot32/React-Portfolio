@@ -10,7 +10,6 @@ import {
   ButtonContainer,
   MobileIcon,
   MobileMenu,
-  MobileNavLogo,
   MobileLink
 } from './NavbarStyledComponent';
 
