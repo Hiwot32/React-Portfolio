@@ -19,9 +19,21 @@ const Contact = () => {
         <Title>Contact</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
         <div>
-          <SocialMediaIcon href={Bio.linkedin} target="_blank"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={`mailto:${Bio.email}`} target="_blank"><MailOutlineIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.facebook} target="_blank"><FacebookIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.linkedin} target="_blank" rel="noopener noreferrer">
+            <LinkedInIcon />
+          </SocialMediaIcon>
+          <a
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${Bio.email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{color: 'White' }}
+          >
+            <MailOutlineIcon />
+          </a>
+
+          <SocialMediaIcon href={Bio.facebook} target="_blank" rel="noopener noreferrer">
+            <FacebookIcon />
+          </SocialMediaIcon>
         </div>
       </Wrapper>
     </Container>
